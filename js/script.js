@@ -8,8 +8,10 @@ function calcularArea() {
 
   var valorterreno = (areaterrenoC * 1800) + (areaterrenoNC * 260);
   var valorcorretor = valorterreno * corretor;
+  var valortotal = valorterreno - valorcorretor;
 
   valor.innerText = "O valor total do terreno corresponde há " + valorterreno + " reais.";
   juroscorretor.innerText = "O juros do corretor corresponde há " + valorcorretor + " reais.";
+  valortotal.innerText = "O valor total do terreno com juros será de " + valortotal + " reais.";
 }
 calcular.addEventListener('click', calcularArea);
